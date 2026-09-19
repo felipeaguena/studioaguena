@@ -18,11 +18,10 @@ export default function Home() {
   const recentProjects = [...web.slice(0, 2), ...social.slice(0, 2)];
 
   return (
-    <div className="pt-15
-    ">
+    <div className="pt-16">
       
       {/* 1. Hero Section com Imagem de Fundo e Camada Gradiente */}
-      <section id="about" className="min-h-[88vh] flex items-center relative overflow-hidden py-24 px-4">
+      <section id="about" className="min-h-[85vh] flex items-center relative overflow-hidden py-16 sm:py-24 px-4">
         {/* Imagem de Fundo */}
         <div className="absolute inset-0 -z-20">
           <Image 
@@ -43,12 +42,12 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-3xl flex flex-col items-start space-y-6">
             <FadeIn direction="up" delay={0.1}>
-              <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 font-semibold px-4 py-1.5 rounded-full text-xs uppercase tracking-widest backdrop-blur-md">
+              <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 font-semibold px-3.5 py-1.5 rounded-full text-xs uppercase tracking-widest backdrop-blur-md">
                 Studio Aguena • Desenvolvimento & Design
               </span>
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
-              <h1 className="text-5xl md:text-7xl font-semibold text-white leading-tight">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold text-white leading-tight">
                 Olá, eu sou <br/>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white">
                   Felipe Aguena
@@ -56,17 +55,17 @@ export default function Home() {
               </h1>
             </FadeIn>
             <FadeIn direction="up" delay={0.3}>
-              <p className="text-xl md:text-2xl text-slate-200 leading-relaxed font-normal">
+              <p className="text-lg sm:text-xl md:text-2xl text-slate-200 leading-relaxed font-normal">
                 Desenvolvedor Front-end e Especialista em Design Estratégico. 
                 Transformo ideias em <strong className="text-white font-semibold">sites de alta conversão</strong> e <strong className="text-white font-semibold">identidades visuais</strong> que vendem.
               </p>
             </FadeIn>
             <FadeIn direction="up" delay={0.4}>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <Link href="/projetos" className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-blue-500/25 hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+                <Link href="/projetos" className="w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-blue-500/25 hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
                   Ver meus Projetos
                 </Link>
-                <Link href="/contato" className="border-2 border-white/20 hover:border-white/40 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-sm">
+                <Link href="/contato" className="w-full sm:w-auto text-center border-2 border-white/20 hover:border-white/40 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-sm">
                   Fale Comigo
                 </Link>
               </div>

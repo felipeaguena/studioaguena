@@ -33,19 +33,19 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
       </div>
 
       {/* Hero do Projeto */}
-      <header className="container mx-auto max-w-5xl px-4 mb-16">
-        <div className="flex flex-col md:flex-row gap-8 items-start md:items-end justify-betweenpb-12">
+      <header className="container mx-auto max-w-5xl px-4 mb-12 sm:mb-16">
+        <div className="flex flex-col md:flex-row gap-8 items-start md:items-end justify-between pb-8 sm:pb-12">
           <div className="md:w-2/3">
             <FadeIn direction="up" delay={0.1}>
               <p className="text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-widest text-sm mb-4">{project.category}</p>
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
-              <h1 className="text-4xl md:text-6xl font-semibold text-slate-900 dark:text-white leading-tight mb-6">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-semibold text-slate-900 dark:text-white leading-tight mb-6 break-words">
                 {project.title}
               </h1>
             </FadeIn>
             <FadeIn direction="up" delay={0.3}>
-              <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
+              <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
                 {project.description}
               </p>
             </FadeIn>
@@ -77,7 +77,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
       {/* Imagem Principal */}
       <section className="container mx-auto max-w-6xl px-4 mb-20">
         <FadeIn direction="up" delay={0.2}>
-          <div className="w-full h-[400px] md:h-[600px] bg-slate-200 dark:bg-slate-800 rounded-3xl overflow-hidden relative shadow-2xl">
+          <div className="w-full h-[240px] sm:h-[400px] md:h-[600px] bg-slate-200 dark:bg-slate-800 rounded-3xl overflow-hidden relative shadow-2xl">
              <Image src={project.imageUrl} alt={project.title} fill className="object-cover" priority />
           </div>
         </FadeIn>

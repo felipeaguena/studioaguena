@@ -49,18 +49,18 @@ export default function SobrePage() {
                   Minha missão é ajudar marcas e profissionais a construírem uma presença digital forte, profissional e altamente voltada para conversão.
                 </p>
                 <p>
-                  Não crio apenas "sites bonitos" ou "postagens de Instagram". Eu crio **ecossistemas digitais**. 
+                  Não crio apenas &quot;sites bonitos&quot; ou &quot;postagens de Instagram&quot;. Eu crio <strong className="text-slate-900 dark:text-white font-semibold">ecossistemas digitais</strong>. 
                   Entendo que o design precisa atrair e o código precisa converter. 
                   A união dessas duas habilidades me permite entregar soluções completas, desde a identidade visual até a landing page de alta performance.
                 </p>
               </div>
             </FadeIn>
             <FadeIn direction="up" delay={0.5}>
-              <div className="pt-6">
-                <Link href="/projetos" className="inline-block bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg mr-4 mb-4">
+              <div className="pt-4 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <Link href="/projetos" className="w-full sm:w-auto text-center bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg">
                   Ver meu Portfólio
                 </Link>
-                <Link href="/contato" className="inline-block border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold px-8 py-4 rounded-xl hover:border-slate-300 dark:hover:border-slate-500 transition-colors mb-4">
+                <Link href="/contato" className="w-full sm:w-auto text-center border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold px-8 py-4 rounded-xl hover:border-slate-300 dark:hover:border-slate-500 transition-colors">
                   Entrar em Contato
                 </Link>
               </div>

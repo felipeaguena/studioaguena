@@ -33,10 +33,10 @@ export default function ProjetosPage() {
         }
         subtitle="Explore nossos cases de desenvolvimento web de alta performance e design estratégico. Cada entrega une estética refinada, velocidade extrema e foco em conversão."
       >
-        <div className="flex flex-wrap justify-center items-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 w-full sm:w-auto">
           <a 
             href="#web" 
-            className="inline-flex items-center bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
           >
             <svg className="w-5 h-5 mr-2 text-blue-400 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -45,7 +45,7 @@ export default function ProjetosPage() {
           </a>
           <a 
             href="#social" 
-            className="inline-flex items-center bg-white dark:bg-slate-900 border-2 border-slate-200  hover:border-slate-300 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200 font-semibold px-7 py-3.5 rounded-xl transition-all shadow-sm hover:-translate-y-0.5 transform duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-white dark:bg-slate-900 border-2 border-slate-200 hover:border-slate-300 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200 font-semibold px-7 py-3.5 rounded-xl transition-all shadow-sm hover:-translate-y-0.5 transform duration-200"
           >
             <svg className="w-5 h-5 mr-2 text-indigo-500 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />

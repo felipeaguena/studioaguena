@@ -50,7 +50,7 @@ export default async function RootLayout({
       <body className={`${manrope.className} ${manrope.variable} font-sans bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased min-h-screen flex flex-col transition-colors duration-300`}>
         <ThemeProvider>
           <Header navData={navData} />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow w-full overflow-x-hidden">{children}</main>
           <Footer navData={navData} />
         </ThemeProvider>
       </body>

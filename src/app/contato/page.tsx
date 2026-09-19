@@ -22,18 +22,18 @@ export default function ContatoPage() {
           </>
         }
         subtitle="Seja para um novo site de alta conversão, uma identidade visual marcante ou uma consultoria estratégica: me conte sobre seu negócio e receba uma proposta sob medida."
-        className="mb-16"
+        className="mb-12 sm:mb-16"
       >
-        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4 text-xs md:text-sm font-medium text-slate-600 dark:text-slate-400">
-          <span className="inline-flex items-center bg-white dark:bg-slate-900 px-4 py-2.5 rounded-xl  shadow-xs">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-2.5 sm:gap-4 text-xs md:text-sm font-medium text-slate-600 dark:text-slate-400 w-full">
+          <span className="w-full sm:w-auto inline-flex items-center justify-center bg-white dark:bg-slate-900 px-4 py-2.5 rounded-xl shadow-xs border border-slate-100 dark:border-slate-800">
             <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2.5 animate-pulse"></span>
             Disponível para novos projetos
           </span>
-          <span className="inline-flex items-center bg-white dark:bg-slate-900 px-4 py-2.5 rounded-xl  shadow-xs">
+          <span className="w-full sm:w-auto inline-flex items-center justify-center bg-white dark:bg-slate-900 px-4 py-2.5 rounded-xl shadow-xs border border-slate-100 dark:border-slate-800">
             <svg className="w-4 h-4 text-blue-600 dark:text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             Resposta em até 24h úteis
           </span>
-          <span className="inline-flex items-center bg-white dark:bg-slate-900 px-4 py-2.5 rounded-xl  shadow-xs">
+          <span className="w-full sm:w-auto inline-flex items-center justify-center bg-white dark:bg-slate-900 px-4 py-2.5 rounded-xl shadow-xs border border-slate-100 dark:border-slate-800">
             <svg className="w-4 h-4 text-indigo-600 dark:text-indigo-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
             Atendimento direto sem burocracia
           </span>

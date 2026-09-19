@@ -112,16 +112,16 @@ export default function SolucoesPage() {
         }
         subtitle="Eliminamos a distância entre uma marca comum e uma marca inesquecível. Unimos código moderno, ultra velocidade e design refinado para gerar autoridade e vendas reais."
       >
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto">
           <a 
             href="#desenvolvimento-web" 
-            className="bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
+            className="w-full sm:w-auto text-center bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 transform duration-200"
           >
             Desenvolvimento Web
           </a>
           <a 
             href="#design-social-media" 
-            className="bg-white dark:bg-slate-900 border-2 border-slate-200  hover:border-slate-400 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200 font-semibold px-8 py-4 rounded-xl transition-all shadow-sm hover:-translate-y-0.5 transform duration-200"
+            className="w-full sm:w-auto text-center bg-white dark:bg-slate-900 border-2 border-slate-200 hover:border-slate-400 dark:hover:border-slate-700 text-slate-800 dark:text-slate-200 font-semibold px-8 py-4 rounded-xl transition-all shadow-sm hover:-translate-y-0.5 transform duration-200"
           >
             Social Media & Design
           </a>
@@ -129,10 +129,10 @@ export default function SolucoesPage() {
       </PageHero>
 
       {/* 2. SOLUÇÃO 1: DESENVOLVIMENTO WEB */}
-      <section id="desenvolvimento-web" className="py-20 px-4 bg-slate-50 dark:bg-slate-900/30  border-slate-200  scroll-mt-20 transition-colors duration-300">
+      <section id="desenvolvimento-web" className="py-20 px-4 bg-slate-50 dark:bg-slate-900/30 border-slate-200 scroll-mt-20 transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
           
-          <div className="flex flex-col lg:flex-row items-center gap-16 mb-16">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
             <div className="lg:w-1/2">
               <FadeIn direction="right" delay={0.1}>
                 <span className="text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-widest text-sm mb-3 block">
@@ -149,21 +149,21 @@ export default function SolucoesPage() {
                   O resultado? Páginas que abrem num piscar de olhos, nota máxima no Google PageSpeed, experiência fluida em smartphones e arquitetura otimizada para capturar leads no piloto automático.
                 </p>
                 
-                <div className="flex items-center gap-6">
-                  <Link href="/contato" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg hover:shadow-xl inline-flex items-center">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <Link href="/contato" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg hover:shadow-xl inline-flex items-center justify-center">
                     Solicitar Proposta de Site
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                   </Link>
-                  <Link href="/projetos" className="text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-semibold underline transition-colors">
+                  <Link href="/projetos" className="text-center text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-semibold underline transition-colors py-2">
                     Ver cases de sites
                   </Link>
                 </div>
               </FadeIn>
             </div>
 
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 w-full">
               <FadeIn direction="left" delay={0.2}>
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-neutral-900 ">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-neutral-900">
                   <div className="relative w-full aspect-[4/3]">
                     <Image 
                       src="/projetos/web-2/mockup-saas.jpg" 
@@ -173,13 +173,13 @@ export default function SolucoesPage() {
                     />
                   </div>
                   {/* Badge Flutuante de Performance */}
-                  <div className="absolute bottom-6 left-6 bg-slate-900/90 dark:bg-slate-950/90 backdrop-blur-md text-white p-4 rounded-2xl shadow-xl flex items-center gap-4 border border-slate-700">
-                    <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-semibold text-xl">
+                  <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 max-w-[calc(100%-2rem)] bg-slate-900/90 dark:bg-slate-950/90 backdrop-blur-md text-white p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-slate-700">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 shrink-0 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-semibold text-lg sm:text-xl">
                       99
                     </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-slate-400 font-semibold">Google PageSpeed</p>
-                      <p className="text-sm font-semibold">Velocidade & SEO Nota Máxima</p>
+                    <div className="min-w-0">
+                      <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold truncate">Google PageSpeed</p>
+                      <p className="text-xs sm:text-sm font-semibold truncate">Velocidade & SEO Nota Máxima</p>
                     </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export default function SolucoesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8">
             {webFeatures.map((item, index) => (
               <FadeIn key={index} direction="up" delay={0.1 * index}>
-                <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-sm  hover:shadow-md hover:border-blue-200 dark:hover:border-blue-500/40 transition-all h-full flex flex-col justify-between">
+                <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-sm hover:shadow-md hover:border-blue-200 dark:hover:border-blue-500/40 transition-all h-full flex flex-col justify-between">
                   <div>
                     <span className="inline-block bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 font-semibold text-xs uppercase tracking-wider px-3 py-1 rounded-lg mb-4">
                       {item.badge}
@@ -208,10 +208,10 @@ export default function SolucoesPage() {
       </section>
 
       {/* 3. SOLUÇÃO 2: DESIGN E SOCIAL MEDIA */}
-      <section id="design-social-media" className="py-20 px-4 bg-white dark:bg-slate-950  border-slate-200  scroll-mt-20 transition-colors duration-300">
+      <section id="design-social-media" className="py-20 px-4 bg-white dark:bg-slate-950 border-slate-200 scroll-mt-20 transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
           
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-16">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16 mb-16">
             <div className="lg:w-1/2">
               <FadeIn direction="left" delay={0.1}>
                 <span className="text-indigo-600 dark:text-indigo-400 font-semibold uppercase tracking-widest text-sm mb-3 block">
@@ -227,21 +227,21 @@ export default function SolucoesPage() {
                   Desenvolvemos identidades visuais impactantes e criativos estratégicos que param o scroll do usuário no Instagram e LinkedIn, convertendo curiosos em compradores fiéis.
                 </p>
                 
-                <div className="flex items-center gap-6">
-                  <Link href="/contato" className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg hover:shadow-xl inline-flex items-center">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <Link href="/contato" className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg hover:shadow-xl inline-flex items-center justify-center">
                     Solicitar Proposta de Design
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                   </Link>
-                  <Link href="/projetos" className="text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-semibold underline transition-colors">
+                  <Link href="/projetos" className="text-center text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-semibold underline transition-colors py-2">
                     Ver cases de design
                   </Link>
                 </div>
               </FadeIn>
             </div>
 
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 w-full">
               <FadeIn direction="right" delay={0.2}>
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-neutral-900 ">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-neutral-900">
                   <div className="relative w-full aspect-[4/3]">
                     <Image 
                       src="/projetos/soc-2/social-ads.jpg" 
@@ -251,13 +251,13 @@ export default function SolucoesPage() {
                     />
                   </div>
                   {/* Badge Flutuante de Engajamento */}
-                  <div className="absolute bottom-6 left-6 bg-slate-900/90 dark:bg-slate-950/90 backdrop-blur-md text-white p-4 rounded-2xl shadow-xl flex items-center gap-4 border border-slate-700">
-                    <div className="w-12 h-12 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-semibold text-xl">
+                  <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 max-w-[calc(100%-2rem)] bg-slate-900/90 dark:bg-slate-950/90 backdrop-blur-md text-white p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-slate-700">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 shrink-0 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-semibold text-lg sm:text-xl">
                       ✦
                     </div>
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-slate-400 font-semibold">Retenção de Audiência</p>
-                      <p className="text-sm font-semibold">Identidade Única & Conversão</p>
+                    <div className="min-w-0">
+                      <p className="text-[10px] sm:text-xs uppercase tracking-wider text-slate-400 font-semibold truncate">Retenção de Audiência</p>
+                      <p className="text-xs sm:text-sm font-semibold truncate">Identidade Única & Conversão</p>
                     </div>
                   </div>
                 </div>
