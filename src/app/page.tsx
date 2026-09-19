@@ -20,44 +20,45 @@ export default function Home() {
   return (
     <div className="pt-16">
       
-      {/* 1. Hero Section com Imagem de Fundo e Camada Gradiente */}
-      <section id="about" className="min-h-[85vh] flex items-center relative overflow-hidden py-16 sm:py-24 px-4">
-        {/* Imagem de Fundo */}
-        <div className="absolute inset-0 -z-20">
+      {/* 1. Hero Section com Imagem de Fundo e Camada Gradiente Adaptativa */}
+      <section id="about" className="min-h-[85vh] flex items-center relative overflow-hidden py-16 sm:py-24 px-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+        
+        {/* Imagem de Fundo (Camada 0) */}
+        <div className="absolute inset-0 z-0">
           <Image 
             src="/felipe.jpg" 
             alt="Studio Aguena - Felipe Aguena" 
             fill 
-            className="object-cover object-center md:object-[75%_center] opacity-50 dark:opacity-35 scale-105" 
+            className="object-cover object-[center_top] md:object-[80%_center] opacity-25 dark:opacity-35 transition-opacity duration-300" 
             priority 
           />
         </div>
 
-        {/* Camadas Gradientes para Alto Contraste e Leitura Clara */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/40"></div>
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-slate-950/90 via-transparent to-slate-950/50"></div>
-        <div className="absolute inset-0 -z-10 bg-blue-950/20 mix-blend-overlay"></div>
+        {/* Camadas Gradientes para Alto Contraste e Leitura Clara (Camada 1) */}
+        <div className="absolute inset-0 z-[1] bg-gradient-to-r from-slate-50/80 via-slate-50/50 to-slate-50/10 dark:from-slate-950/80 dark:via-slate-950/50 dark:to-slate-950/25 transition-colors duration-300"></div>
+        <div className="absolute inset-0 z-[1] bg-gradient-to-t from-slate-50/80 dark:from-black via-transparent to-slate-50/20 dark:to-slate-950/30 transition-colors duration-300"></div>
+        <div className="absolute inset-0 z-[1] bg-blue-500/5 dark:bg-blue-600/10 pointer-events-none"></div>
 
-        {/* Conteúdo Central */}
+        {/* Conteúdo Central (Camada 2) */}
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-3xl flex flex-col items-start space-y-6">
             <FadeIn direction="up" delay={0.1}>
-              <span className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 font-semibold px-3.5 py-1.5 rounded-full text-xs uppercase tracking-widest backdrop-blur-md">
+              <span className="inline-block bg-blue-100 dark:bg-blue-950/80 border border-blue-200/60 dark:border-blue-800/50 text-blue-700 dark:text-blue-300 font-semibold px-3.5 py-1.5 rounded-full text-xs uppercase tracking-widest backdrop-blur-md">
                 Studio Aguena • Desenvolvimento & Design
               </span>
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
-              <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold text-white leading-tight">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold text-slate-900 dark:text-white leading-tight">
                 Olá, eu sou <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-white">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 dark:from-blue-400 dark:via-indigo-300 dark:to-blue-400">
                   Felipe Aguena
                 </span>
               </h1>
             </FadeIn>
             <FadeIn direction="up" delay={0.3}>
-              <p className="text-lg sm:text-xl md:text-2xl text-slate-200 leading-relaxed font-normal">
+              <p className="text-lg sm:text-xl md:text-2xl text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
                 Desenvolvedor Front-end e Especialista em Design Estratégico. 
-                Transformo ideias em <strong className="text-white font-semibold">sites de alta conversão</strong> e <strong className="text-white font-semibold">identidades visuais</strong> que vendem.
+                Transformo ideias em <strong className="text-slate-900 dark:text-white font-semibold">sites de alta conversão</strong> e <strong className="text-slate-900 dark:text-white font-semibold">identidades visuais</strong> que vendem.
               </p>
             </FadeIn>
             <FadeIn direction="up" delay={0.4}>
@@ -65,7 +66,7 @@ export default function Home() {
                 <Link href="/projetos" className="w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-blue-500/25 hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
                   Ver meus Projetos
                 </Link>
-                <Link href="/contato" className="w-full sm:w-auto text-center border-2 border-white/20 hover:border-white/40 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-sm">
+                <Link href="/contato" className="w-full sm:w-auto text-center border-2 border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 hover:bg-white dark:hover:bg-slate-800 backdrop-blur-md text-slate-800 dark:text-slate-100 px-8 py-4 rounded-xl font-semibold transition-all shadow-sm">
                   Fale Comigo
                 </Link>
               </div>
