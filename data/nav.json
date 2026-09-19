@@ -1,0 +1,15 @@
+{
+  "headerLinks": [
+    { "label": "Início", "href": "/" },
+    { "label": "Sobre mim", "href": "/sobre" },
+    { "label": "Soluções", "href": "/solucoes" },
+    { "label": "Projetos", "href": "/projetos" },
+    { "label": "Contato", "href": "/contato" }
+  ],
+  "socialLinks": [
+    { "platform": "Instagram", "href": "https://instagram.com/studioaguena" },
+    { "platform": "LinkedIn", "href": "https://linkedin.com/in/felipeaguena" },
+    { "platform": "GitHub", "href": "https://github.com/felipeaguena" },
+    { "platform": "Behance", "href": "https://behance.net/felipeaguena" }
+  ]
+}

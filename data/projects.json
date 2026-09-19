@@ -1,0 +1,156 @@
+{
+  "web": [
+    {
+      "id": "web-1",
+      "title": "E-commerce de Moda",
+      "category": "Desenvolvimento Web",
+      "client": "Marca X",
+      "year": "2025",
+      "description": "Desenvolvimento de um e-commerce completo com Next.js, focado em alta performance e SEO para uma marca de roupas.",
+      "challenge": "O cliente possuía um site antigo, lento e sem otimização para mobile, o que causava uma alta taxa de abandono de carrinho. O desafio era criar uma plataforma ultra-rápida, segura e esteticamente impecável para refletir a nova coleção.",
+      "solution": "Utilizamos Next.js com Tailwind CSS para garantir carregamento quase instantâneo. Implementamos uma arquitetura headless e integramos o Stripe para pagamentos transparentes, melhorando radicalmente a UX no celular.",
+      "results": [
+        "+150% em velocidade de carregamento (LCP menor que 1.2s)",
+        "-30% de taxa de rejeição no mobile",
+        "+45% no faturamento mensal"
+      ],
+      "technologies": ["Next.js", "React", "Tailwind CSS", "Stripe API", "Vercel"],
+      "imageUrl": "/projetos/web-1/mockup-ecommerce.jpg",
+      "gallery": [
+        "/projetos/web-1/mockup-ecommerce-detail.jpg",
+        "/projetos/web-1/mockup-ecommerce-extra.jpg",
+        "/projetos/web-1/mockup-ecommerce-3.jpg",
+        "/projetos/web-1/mockup-ecommerce-4.jpg",
+        "/projetos/web-1/mockup-ecommerce-5.jpg"
+      ],
+      "link": "/projetos/web-1"
+    },
+    {
+      "id": "web-2",
+      "title": "Landing Page para SaaS",
+      "category": "Desenvolvimento Web",
+      "client": "TechFlow App",
+      "year": "2026",
+      "description": "Página focada em alta conversão de leads, com testes A/B estruturados e design limpo.",
+      "challenge": "A startup precisava validar a ideia de seu novo software antes do lançamento oficial, coletando e-mails qualificados a um custo por lead (CPL) viável.",
+      "solution": "Criamos uma Landing Page focada inteiramente em copywriting persuasivo e hierarquia visual. Adicionamos micro-interações para manter a atenção e um formulário de conversão sem atritos.",
+      "results": [
+        "Mais de 5.000 leads capturados em 15 dias",
+        "Taxa de conversão da página em 18.5%",
+        "CPL 40% menor que o projetado"
+      ],
+      "technologies": ["React", "Framer Motion", "Tailwind CSS"],
+      "imageUrl": "/projetos/web-2/mockup-saas.jpg",
+      "gallery": [
+        "/projetos/web-2/mockup-saas-detail.jpg",
+        "/projetos/web-2/mockup-saas-2.jpg",
+        "/projetos/web-2/mockup-saas-3.jpg",
+        "/projetos/web-2/mockup-saas-4.jpg",
+        "/projetos/web-2/mockup-saas-5.jpg"
+      ],
+      "link": "/projetos/web-2"
+    },
+    {
+      "id": "web-3",
+      "title": "Site Institucional Advogados",
+      "category": "Desenvolvimento Web",
+      "client": "Oliveira & Costa",
+      "year": "2025",
+      "description": "Portal corporativo transmitindo autoridade, com sistema de agendamento online e blog integrado.",
+      "challenge": "O escritório necessitava modernizar sua imagem e criar um canal de captação passiva de clientes por meio de artigos jurídicos (SEO).",
+      "solution": "Desenvolvemos um portal institucional com design sóbrio e elegante. Integramos um CMS (Sanity) para que a equipe pudesse postar artigos facilmente e otimizamos o SEO técnico.",
+      "results": [
+        "Primeira página no Google para termos locais chave",
+        "Mais de 2.000 acessos orgânicos mensais",
+        "Aumento de 60% nas consultas online"
+      ],
+      "technologies": ["Next.js", "Sanity CMS", "SEO", "CSS Modules"],
+      "imageUrl": "/projetos/web-3/mockup-lawyer.jpg",
+      "gallery": [
+        "/projetos/web-3/mockup-lawyer-detail.jpg",
+        "/projetos/web-3/mockup-lawyer-2.jpg",
+        "/projetos/web-3/mockup-lawyer-3.jpg",
+        "/projetos/web-3/mockup-lawyer-4.jpg",
+        "/projetos/web-3/mockup-lawyer-5.jpg"
+      ],
+      "link": "/projetos/web-3"
+    }
+  ],
+  "social": [
+    {
+      "id": "soc-1",
+      "title": "Identidade Visual Cafeteria",
+      "category": "Social Media & Design",
+      "client": "Coffee Break",
+      "year": "2026",
+      "description": "Redesign completo do Instagram e criação de templates padronizados para o feed e stories.",
+      "challenge": "A cafeteria tinha um perfil desorganizado, sem unidade visual, o que não refletia a qualidade premium dos grãos e o ambiente acolhedor da loja.",
+      "solution": "Criamos uma paleta de cores terrosas e tipografia acolhedora. Padronizamos os posts com templates no Figma e elaboramos uma linha editorial focada nos bastidores e curiosidades dos cafés.",
+      "results": [
+        "Aumento de 200% no engajamento nos Stories",
+        "Crescimento orgânico de 3k seguidores em 2 meses",
+        "Público relatando maior desejo pelos produtos pelas fotos"
+      ],
+      "technologies": ["Photoshop", "Illustrator", "Figma", "CapCut"],
+      "imageUrl": "/projetos/soc-1/social-coffee.jpg",
+      "gallery": [
+        "/projetos/soc-1/social-coffee-detail.jpg",
+        "/projetos/soc-1/social-coffee-2.jpg",
+        "/projetos/soc-1/social-coffee-3.jpg",
+        "/projetos/soc-1/social-coffee-4.jpg",
+        "/projetos/soc-1/social-coffee-5.jpg"
+      ],
+      "link": "/projetos/soc-1"
+    },
+    {
+      "id": "soc-2",
+      "title": "Lançamento de Infoproduto",
+      "category": "Social Media & Design",
+      "client": "Mestre em Finanças",
+      "year": "2025",
+      "description": "Criativos de alta conversão para tráfego pago (Facebook Ads) que geraram +40% de CTR.",
+      "challenge": "O expert de finanças estava com um custo de captação alto nos anúncios devido a criativos saturados e que não chamavam a atenção (Scroll stopper fraco).",
+      "solution": "Fizemos uma pesquisa de público-alvo e criamos 15 variações de anúncios em vídeo e estáticos com hooks (ganchos) extremamente agressivos e visuais de alto contraste.",
+      "results": [
+        "Redução de 45% no CPA",
+        "Mais de 10.000 cliques nos links",
+        "ROI (Retorno sobre Investimento) de 5x"
+      ],
+      "technologies": ["Premiere Pro", "After Effects", "Photoshop"],
+      "imageUrl": "/projetos/soc-2/social-ads.jpg",
+      "gallery": [
+        "/projetos/soc-2/social-ads-detail.jpg",
+        "/projetos/soc-2/social-ads-2.jpg",
+        "/projetos/soc-2/social-ads-3.jpg",
+        "/projetos/soc-2/social-ads-4.jpg",
+        "/projetos/soc-2/social-ads-5.jpg"
+      ],
+      "link": "/projetos/soc-2"
+    },
+    {
+      "id": "soc-3",
+      "title": "Gestão Médica no Instagram",
+      "category": "Social Media & Design",
+      "client": "Dra. Ana Dermatologista",
+      "year": "2026",
+      "description": "Planejamento editorial e design de postagens focadas em educar pacientes e gerar agendamentos.",
+      "challenge": "Transformar um perfil estritamente comercial em uma vitrine de conhecimento e autoridade, respeitando as normas éticas do conselho de medicina.",
+      "solution": "Estabelecemos carrosséis educativos de alto valor e vídeos curtos (Reels) desmistificando problemas de pele. Tudo com um design limpo, minimalista e passando confiança.",
+      "results": [
+        "Agenda lotada com 2 meses de antecedência",
+        "+40% de salvamentos e compartilhamentos por post",
+        "Autoridade estabelecida na região"
+      ],
+      "technologies": ["Figma", "Illustrator", "Planejamento Estratégico"],
+      "imageUrl": "/projetos/soc-3/social-medical.jpg",
+      "gallery": [
+        "/projetos/soc-3/social-medical-detail.jpg",
+        "/projetos/soc-3/social-medical-2.jpg",
+        "/projetos/soc-3/social-medical-3.jpg",
+        "/projetos/soc-3/social-medical-4.jpg",
+        "/projetos/soc-3/social-medical-5.jpg"
+      ],
+      "link": "/projetos/soc-3"
+    }
+  ]
+}
