@@ -142,7 +142,7 @@ export default async function RootLayout({
         />
         <ThemeProvider>
           <Header navData={navData} />
-          <main className="flex-grow w-full overflow-x-hidden">{children}</main>
+          <main className="flex-grow w-full overflow-x-clip">{children}</main>
           <Footer navData={navData} />
           <WhatsAppButton />
         </ThemeProvider>
