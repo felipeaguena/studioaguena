@@ -46,10 +46,6 @@ export default function SobrePage() {
             <FadeIn direction="up" delay={0.4}>
               <div className="text-lg text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed">
                 <p>
-                  Sou Desenvolvedor Front-end e Especialista em Design e Social Media. 
-                  Minha missão é ajudar marcas e profissionais a construírem uma presença digital forte, profissional e altamente voltada para conversão.
-                </p>
-                <p>
                   Não crio apenas &quot;sites bonitos&quot; ou &quot;postagens de Instagram&quot;. Eu crio <strong className="text-slate-900 dark:text-white font-semibold">ecossistemas digitais</strong>. 
                   Entendo que o design precisa atrair e o código precisa converter. 
                   A união dessas duas habilidades me permite entregar soluções completas, desde a identidade visual até a landing page de alta performance.
