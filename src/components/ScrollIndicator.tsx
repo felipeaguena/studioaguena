@@ -28,7 +28,7 @@ export default function ScrollIndicator({
 
   return (
     <div
-      className={`absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center justify-center cursor-pointer group select-none transition-all duration-300 ${className}`}
+      className={`absolute bottom-0 sm:bottom-0 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center justify-center cursor-pointer group select-none transition-all duration-300 ${className}`}
       onClick={handleScroll}
       role="button"
       tabIndex={0}

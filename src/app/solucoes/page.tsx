@@ -5,9 +5,19 @@ import PageHero from '@/components/PageHero';
 import ProcessSection from '@/components/ProcessSection';
 import CTASection from '@/components/CTASection';
 
-export const metadata = {
-  title: 'Soluções | Studio Aguena',
-  description: 'Soluções completas de desenvolvimento web de alta performance e design estratégico para redes sociais.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Soluções',
+  description: 'Soluções completas de desenvolvimento web de alta performance e design estratégico para redes sociais e marcas.',
+  openGraph: {
+    title: 'Soluções | Studio Aguena',
+    description: 'Soluções completas de desenvolvimento web de alta performance e design estratégico para redes sociais.',
+    url: 'https://studioaguena.com.br/solucoes',
+  },
+  alternates: {
+    canonical: 'https://studioaguena.com.br/solucoes',
+  }
 };
 
 export default function SolucoesPage() {
@@ -170,6 +180,9 @@ export default function SolucoesPage() {
                       src="/projetos/web-2/mockup-saas.jpg" 
                       alt="Solução em Desenvolvimento Web" 
                       fill 
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      quality={85}
+                      loading="eager"
                       className="object-cover" 
                     />
                   </div>
@@ -248,6 +261,9 @@ export default function SolucoesPage() {
                       src="/projetos/soc-2/social-ads.jpg" 
                       alt="Solução em Design e Social Media" 
                       fill 
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      quality={85}
+                      loading="eager"
                       className="object-cover" 
                     />
                   </div>

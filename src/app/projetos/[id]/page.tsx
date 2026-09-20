@@ -78,7 +78,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
       <section className="container mx-auto max-w-6xl px-4 mb-20">
         <FadeIn direction="up" delay={0.2}>
           <div className="w-full h-[240px] sm:h-[400px] md:h-[600px] bg-slate-200 dark:bg-slate-800 rounded-3xl overflow-hidden relative shadow-2xl">
-             <Image src={project.imageUrl} alt={project.title} fill className="object-cover" priority />
+             <Image src={project.imageUrl} alt={project.title} fill sizes="(max-width: 1200px) 100vw, 1200px" quality={90} loading="eager" className="object-cover" priority />
           </div>
         </FadeIn>
       </section>
@@ -144,6 +144,9 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
                     alt={`Detalhe do projeto ${i + 1}`} 
                     width={1200} 
                     height={1200} 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={85}
+                    loading="eager"
                     className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500" 
                   />
                 </div>

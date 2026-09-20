@@ -1,9 +1,19 @@
 import FadeIn from '@/components/FadeIn';
 import PageHero from '@/components/PageHero';
 
-export const metadata = {
-  title: 'Contato | Studio Aguena',
-  description: 'Entre em contato para orçamentos e parcerias.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contato',
+  description: 'Entre em contato com o Studio Aguena para orçamentos, parcerias e desenvolvimento de projetos digitais.',
+  openGraph: {
+    title: 'Contato | Studio Aguena',
+    description: 'Entre em contato com o Studio Aguena para orçamentos, parcerias e desenvolvimento de projetos digitais.',
+    url: 'https://studioaguena.com.br/contato',
+  },
+  alternates: {
+    canonical: 'https://studioaguena.com.br/contato',
+  }
 };
 
 export default function ContatoPage() {
@@ -56,7 +66,7 @@ export default function ContatoPage() {
                     <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                     <div>
                       <p className="font-semibold text-slate-900 dark:text-white">WhatsApp</p>
-                      <a href="https://wa.me/5511999999999" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">+55 (11) 99999-9999</a>
+                      <a href="https://wa.me/5511963563013" target="_blank" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">+55 (11) 96356-3013</a>
                     </div>
                   </div>
                   
@@ -64,7 +74,7 @@ export default function ContatoPage() {
                     <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                     <div>
                       <p className="font-semibold text-slate-900 dark:text-white">E-mail</p>
-                      <a href="mailto:contato@studioaguena.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">contato@studioaguena.com</a>
+                      <a href="mailto:ola@studioaguena.com.br" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">ola@studioaguena.com.br</a>
                     </div>
                   </div>
                   

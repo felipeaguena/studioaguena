@@ -13,7 +13,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
 
   if (!mounted) {
     return (
-      <div className={`w-10 h-10 rounded-xl border border-slate-200 dark:border-neutral-900  bg-slate-100/50 dark:bg-slate-800/50 ${className}`} />
+      <div className={`${className}`} />
     );
   }
 
@@ -24,16 +24,16 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       onClick={toggleTheme}
       aria-label={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
       title={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
-      className={`relative p-2.5 rounded-full border transition-all duration-300 flex items-center justify-center group ${
+      className={`relative p-2.5 transition-all duration-300 flex items-center justify-center group ${
         isDark
-          ? "bg-slate-800 border-slate-700 text-amber-400 hover:bg-slate-700 hover:border-amber-400/40"
-          : "bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200 hover:border-slate-300"
+          ? " text-amber-400 cursor-pointer"
+          : " text-slate-700 cursor-pointer"
       } ${className}`}
     >
       {isDark ? (
         // Ícone Sol (Modo Claro)
         <svg
-          className="w-5 h-5 transform transition-transform duration-500 rotate-0 hover:rotate-90"
+          className="w-6 h-6 transform transition-transform duration-500 rotate-0 hover:rotate-90"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       ) : (
         // Ícone Lua (Modo Escuro)
         <svg
-          className="w-5 h-5 transform transition-transform duration-500 -rotate-12 group-hover:rotate-0"
+          className="w-6 h-6 transform transition-transform duration-500 -rotate-12 group-hover:rotate-0"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

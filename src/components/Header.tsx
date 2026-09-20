@@ -25,7 +25,7 @@ export default function Header({ navData }: { navData: any }) {
                 </Link>
               ))}
             </nav>
-            <div className="pl-2 border-l border-slate-200 dark:border-slate-700">
+            <div className="pl-2">
               <ThemeToggle />
             </div>
           </div>

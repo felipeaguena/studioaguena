@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import FadeIn from './FadeIn';
+import Button from './Button';
 
 export default function CTASection() {
   return (
@@ -20,19 +21,23 @@ export default function CTASection() {
         </FadeIn>
         <FadeIn direction="up" delay={0.3}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link 
+            <Button 
               href="/contato" 
-              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-10 py-5 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25 hover:shadow-xl hover:-translate-y-0.5 transform duration-200"
+              variant="solid-blue"
+              size="xl"
+              className="w-full sm:w-auto"
             >
               Iniciar meu Projeto
-            </Link>
-            <Link 
+            </Button>
+            <Button 
               href="https://wa.me/5511999999999" 
               target="_blank" 
-              className="w-full sm:w-auto border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-300 dark:hover:border-slate-600 text-slate-800 dark:text-white font-semibold px-10 py-5 rounded-xl transition-all shadow-sm hover:-translate-y-0.5 transform duration-200"
+              variant="outline-alt"
+              size="xl"
+              className="w-full sm:w-auto"
             >
               Falar pelo WhatsApp
-            </Link>
+            </Button>
           </div>
         </FadeIn>
       </div>

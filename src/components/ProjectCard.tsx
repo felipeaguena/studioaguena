@@ -28,7 +28,7 @@ export default function ProjectCard({ project, hoverColor = 'blue' }: ProjectCar
     >
       {/* Imagem do Projeto */}
       <div className="h-56 bg-slate-200 dark:bg-slate-800 relative overflow-hidden">
-        <Image src={project.imageUrl} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+        <Image src={project.imageUrl} alt={project.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" quality={80} loading="eager" className="object-cover group-hover:scale-105 transition-transform duration-500" />
       </div>
       
       {/* Conteúdo */}

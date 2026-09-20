@@ -6,10 +6,22 @@ import ProcessSection from '@/components/ProcessSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import ScrollIndicator from '@/components/ScrollIndicator';
+import Button from '@/components/Button';
+import Badge from '@/components/Badge';
 
-export const metadata = {
-  title: 'Sobre Mim | Studio Aguena',
-  description: 'Conheça Felipe Aguena, desenvolvedor front-end e especialista em design estratégico.',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre',
+  description: 'Conheça Felipe Aguena, desenvolvedor front-end e especialista em design estratégico por trás do Studio Aguena.',
+  openGraph: {
+    title: 'Sobre | Studio Aguena',
+    description: 'Conheça Felipe Aguena, desenvolvedor front-end e especialista em design estratégico por trás do Studio Aguena.',
+    url: 'https://studioaguena.com.br/sobre',
+  },
+  alternates: {
+    canonical: 'https://studioaguena.com.br/sobre',
+  }
 };
 
 export default function SobrePage() {
@@ -27,6 +39,9 @@ export default function SobrePage() {
                   src="/felipe.jpg" 
                   alt="Felipe Aguena trabalhando" 
                   fill 
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={85}
+                  loading="eager"
                   className="object-cover hover:scale-105 transition-transform duration-700" 
                   priority 
                 />
@@ -54,12 +69,12 @@ export default function SobrePage() {
             </FadeIn>
             <FadeIn direction="up" delay={0.5}>
               <div className="pt-4 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <Link href="/projetos" className="w-full sm:w-auto text-center bg-slate-900 hover:bg-slate-800 dark:bg-blue-600 dark:hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg">
+                <Button href="/projetos" variant="primary" size="lg" className="w-full sm:w-auto">
                   Ver meu Portfólio
-                </Link>
-                <Link href="/contato" className="w-full sm:w-auto text-center border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-semibold px-8 py-4 rounded-xl hover:border-slate-300 dark:hover:border-slate-500 transition-colors">
+                </Button>
+                <Button href="/contato" variant="outline" size="lg" className="w-full sm:w-auto">
                   Entrar em Contato
-                </Link>
+                </Button>
               </div>
             </FadeIn>
           </div>
@@ -247,13 +262,13 @@ export default function SobrePage() {
               <div className="md:w-1/2">
                 <FadeIn direction="right" delay={0.2}>
                   <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-xl bg-slate-100 dark:bg-slate-800">
-                    <Image src="/projetos/web-2/mockup-saas.jpg" alt="Plataforma SaaS Automática" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+                    <Image src="/projetos/web-2/mockup-saas.jpg" alt="Plataforma SaaS Automática" fill sizes="(max-width: 768px) 100vw, 50vw" quality={80} loading="eager" className="object-cover hover:scale-105 transition-transform duration-700" />
                   </div>
                 </FadeIn>
               </div>
               <div className="md:w-1/2 flex flex-col gap-4">
                 <FadeIn direction="left" delay={0.3}>
-                  <div className="inline-block bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 px-3 py-1 rounded-full text-sm font-semibold uppercase tracking-wider w-max mb-2">Automação Web</div>
+                  <Badge variant="blue-solid" size="md" className="mb-2">Automação Web</Badge>
                   <h3 className="text-3xl font-semibold text-slate-900 dark:text-white">Plataforma de Leads com Disparo Automático</h3>
                   <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
                     Desenvolvimento de um sistema completo onde a landing page captura o lead e o integra automaticamente via webhook (n8n/Make) diretamente para o CRM do cliente.

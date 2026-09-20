@@ -10,6 +10,8 @@ import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from '@/components/Button';
+import Badge from '@/components/Badge';
 
 export default function Home() {
   const projectsFilePath = path.join(process.cwd(), 'data', 'projects.json');
@@ -30,6 +32,9 @@ export default function Home() {
             src="/felipe.jpg" 
             alt="Studio Aguena - Felipe Aguena" 
             fill 
+            sizes="100vw"
+            quality={85}
+            loading="eager"
             className="object-cover object-[center_top] md:object-[80%_center] opacity-25 dark:opacity-35 transition-opacity duration-300" 
             priority 
           />
@@ -44,9 +49,9 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="max-w-3xl flex flex-col items-start space-y-6">
             <FadeIn direction="up" delay={0.1}>
-              <span className="inline-block bg-blue-100 dark:bg-blue-950/80 border border-blue-200/60 dark:border-blue-800/50 text-blue-700 dark:text-blue-300 font-semibold px-3.5 py-1.5 rounded-full text-xs uppercase tracking-widest backdrop-blur-md">
+              <Badge variant="blue-blur" size="sm">
                 Studio Aguena • Desenvolvimento & Design
-              </span>
+              </Badge>
             </FadeIn>
             <FadeIn direction="up" delay={0.2}>
               <h1 className="text-4xl sm:text-6xl md:text-7xl font-semibold text-slate-900 dark:text-white leading-tight">
@@ -62,14 +67,32 @@ export default function Home() {
                 Transformo ideias em <strong className="text-slate-900 dark:text-white font-semibold">sites de alta conversão</strong> e <strong className="text-slate-900 dark:text-white font-semibold">identidades visuais</strong> que vendem.
               </p>
             </FadeIn>
-            <FadeIn direction="up" delay={0.4}>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
-                <Link href="/projetos" className="w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-blue-500/25 hover:shadow-xl hover:-translate-y-0.5 transform duration-200">
-                  Ver meus Projetos
-                </Link>
-                <Link href="/contato" className="w-full sm:w-auto text-center border-2 border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 hover:bg-white dark:hover:bg-slate-800 backdrop-blur-md text-slate-800 dark:text-slate-100 px-8 py-4 rounded-xl font-semibold transition-all shadow-sm">
+            <FadeIn direction="up" delay={0.4} className="w-full">
+              <div className="flex flex-col sm:flex-row sm:justify-start justify-center sm:items-center gap-3 sm:gap-4 w-full">
+                <Button 
+                  href="/projetos" 
+                  variant="primary" 
+                  className="w-full sm:w-auto"
+                  icon={
+                    <svg className="w-5 h-5 text-blue-400 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  }
+                >
+                  Meus Projetos
+                </Button>
+                <Button 
+                  href="/contato" 
+                  variant="outline" 
+                  className="w-full sm:w-auto"
+                  icon={
+                    <svg className="w-5 h-5 text-indigo-500 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  }
+                >
                   Fale Comigo
-                </Link>
+                </Button>
               </div>
             </FadeIn>
           </div>
@@ -118,10 +141,15 @@ export default function Home() {
 
         <FadeIn direction="up" delay={0.3}>
           <div className="text-center mt-12">
-            <Link href="/solucoes" className="inline-flex items-center bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-md">
+            <Button 
+              href="/solucoes" 
+              variant="primary" 
+              size="lg"
+              iconPosition="right"
+              icon={<svg className="w-5 h-5 text-current" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>}
+            >
               Ver detalhes de todas as soluções
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </Link>
+            </Button>
           </div>
         </FadeIn>
       </Section>
