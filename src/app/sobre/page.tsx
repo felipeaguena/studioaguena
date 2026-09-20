@@ -5,6 +5,7 @@ import StatsBar from '@/components/StatsBar';
 import ProcessSection from '@/components/ProcessSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
+import ScrollIndicator from '@/components/ScrollIndicator';
 
 export const metadata = {
   title: 'Sobre Mim | Studio Aguena',
@@ -16,7 +17,7 @@ export default function SobrePage() {
     <div className="pt-24 pb-0 bg-white dark:bg-slate-950 transition-colors duration-300">
       
       {/* 1. Seção Hero Sobre */}
-      <section className="container mx-auto max-w-6xl px-4 mb-20">
+      <section className="container mx-auto max-w-6xl px-4 mb-16 sm:mb-20 relative pb-16 sm:pb-24">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           <div className="lg:w-1/2">
@@ -68,9 +69,14 @@ export default function SobrePage() {
           </div>
 
         </div>
+
+        {/* Indicador de rolagem animado */}
+        <ScrollIndicator targetId="#stats" />
       </section>
 
-      <StatsBar />
+      <div id="stats">
+        <StatsBar />
+      </div>
 
       {/* 3. Seção Experiência / Valores */}
       <section className="bg-slate-50 dark:bg-slate-900/30 py-20 px-4 transition-colors duration-300">

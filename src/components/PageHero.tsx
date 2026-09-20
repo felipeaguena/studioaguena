@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import FadeIn from './FadeIn';
+import ScrollIndicator from './ScrollIndicator';
 
 interface PageHeroProps {
   badge?: string;
@@ -8,6 +9,8 @@ interface PageHeroProps {
   children?: ReactNode;
   className?: string;
   hasBorder?: boolean;
+  showScrollIndicator?: boolean;
+  targetId?: string;
 }
 
 export default function PageHero({
@@ -17,10 +20,12 @@ export default function PageHero({
   children,
   className = "",
   hasBorder = false,
+  showScrollIndicator = true,
+  targetId,
 }: PageHeroProps) {
   return (
     <section
-      className={`relative overflow-hidden pt-8 sm:pt-12 pb-14 sm:pb-20 px-4 text-center ${
+      className={`relative overflow-hidden pt-8 sm:pt-12 pb-20 sm:pb-28 px-4 text-center ${
         hasBorder ? "border-b border-blue-200/80" : ""
       } transition-colors duration-300 ${className}`}
     >
@@ -56,6 +61,10 @@ export default function PageHero({
           </FadeIn>
         )}
       </div>
+
+      {showScrollIndicator && (
+        <ScrollIndicator targetId={targetId} />
+      )}
     </section>
   );
 }

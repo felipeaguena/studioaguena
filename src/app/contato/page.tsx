@@ -13,6 +13,7 @@ export default function ContatoPage() {
       {/* 1. Cabeçalho / Hero da Página de Contato */}
       <PageHero
         badge="Inicie seu Projeto • Studio Aguena"
+        targetId="#contato-form"
         title={
           <>
             Vamos construir algo{" "}
@@ -41,7 +42,7 @@ export default function ContatoPage() {
       </PageHero>
 
       {/* 2. Conteúdo Principal: Informações e Formulário */}
-      <div className="container mx-auto max-w-6xl px-4">
+      <div id="contato-form" className="container mx-auto max-w-6xl px-4 scroll-mt-24">
         <div className="flex flex-col lg:flex-row gap-12 max-w-5xl mx-auto">
           
           {/* Informações de Contato */}

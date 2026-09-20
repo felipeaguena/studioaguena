@@ -5,6 +5,7 @@ import StatsBar from "@/components/StatsBar";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
@@ -21,7 +22,7 @@ export default function Home() {
     <div className="pt-16">
       
       {/* 1. Hero Section com Imagem de Fundo e Camada Gradiente Adaptativa */}
-      <section id="about" className="min-h-[85vh] flex items-center relative overflow-hidden py-16 sm:py-24 px-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+      <section id="about" className="min-h-[85vh] sm:min-h-[88vh] flex items-center relative overflow-hidden py-16 sm:py-24 pb-20 sm:pb-28 px-4 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         
         {/* Imagem de Fundo (Camada 0) */}
         <div className="absolute inset-0 z-0">
@@ -36,7 +37,7 @@ export default function Home() {
 
         {/* Camadas Gradientes para Alto Contraste e Leitura Clara (Camada 1) */}
         <div className="absolute inset-0 z-[1] bg-gradient-to-r from-slate-50/80 via-slate-50/50 to-slate-50/10 dark:from-slate-950/80 dark:via-slate-950/50 dark:to-slate-950/25 transition-colors duration-300"></div>
-        <div className="absolute inset-0 z-[1] bg-gradient-to-t from-slate-50/80 dark:from-black via-transparent to-slate-50/20 dark:to-slate-950/30 transition-colors duration-300"></div>
+        <div className="absolute inset-0 z-[1] bg-gradient-to-t from-slate-50 to-transparent via-transparent dark:from-black to-black/60 dark:to-black/60 transition-colors duration-300"></div>
         <div className="absolute inset-0 z-[1] bg-blue-500/5 dark:bg-blue-600/10 pointer-events-none"></div>
 
         {/* Conteúdo Central (Camada 2) */}
@@ -73,10 +74,15 @@ export default function Home() {
             </FadeIn>
           </div>
         </div>
+
+        {/* Indicador de rolagem animado */}
+        <ScrollIndicator targetId="#stats" />
       </section>
 
       {/* Barra de Números */}
-      <StatsBar />
+      <div id="stats">
+        <StatsBar />
+      </div>
 
       {/* 2. Soluções Resumidas */}
       <Section id="solucoes" title="Soluções Estratégicas" subtitle="Como ajudamos sua marca a se destacar e vender mais no ambiente digital." className="bg-slate-50 dark:bg-slate-900/40">

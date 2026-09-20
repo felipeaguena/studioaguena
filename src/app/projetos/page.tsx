@@ -23,6 +23,7 @@ export default function ProjetosPage() {
       {/* Cabeçalho da página */}
       <PageHero
         badge="Cases de Sucesso & Portfólio"
+        targetId="#web"
         title={
           <>
             Projetos reais construídos para gerar{" "}
@@ -41,7 +42,8 @@ export default function ProjetosPage() {
             <svg className="w-5 h-5 mr-2 text-blue-400 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            Desenvolvimento Web ({web.length})
+            Desenvolvimento Web
+            {/* Desenvolvimento Web ({web.length}) */}
           </a>
           <a 
             href="#social" 
@@ -50,7 +52,8 @@ export default function ProjetosPage() {
             <svg className="w-5 h-5 mr-2 text-indigo-500 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            Social Media & Design ({social.length})
+            Social Media & Design
+            {/* Social Media & Design ({social.length}) */}
           </a>
         </div>
       </PageHero>

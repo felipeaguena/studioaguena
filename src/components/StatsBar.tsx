@@ -2,7 +2,7 @@ import FadeIn from './FadeIn';
 
 export default function StatsBar() {
   return (
-    <section className="bg-white dark:bg-slate-950   /80 py-12 px-4 transition-colors duration-300">
+    <section className="bg-white dark:bg-slate-950 pt-26 py-12 px-4 transition-colors duration-300">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:divide-x divide-slate-200 dark:divide-slate-800">
           <FadeIn direction="up" delay={0.1}>

@@ -102,6 +102,7 @@ export default function SolucoesPage() {
       {/* 1. Hero da Página de Soluções */}
       <PageHero
         badge="Soluções Digitais de Ponta a Ponta"
+        targetId="#desenvolvimento-web"
         title={
           <>
             Desenvolvimento Web e Design Estratégico para marcas que querem{" "}
